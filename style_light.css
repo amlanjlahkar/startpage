@@ -1,0 +1,126 @@
+:root {
+    --bg: #fdf6e3;
+    --color_heading: #002b36;
+    --color_subtitle: #586e75;
+    --color_heading_categories: #2aa198;
+    --color_categories-hover: #eee8d5;
+    --color_border: #eee8d5;
+    --color_links: #073642;
+    --color_links-hover: #cb4b16;
+    --font_heading: 'Lato', sans-serif;
+    --font_default: 'Fira Sans Condensed', sans-serif;
+}
+body {
+    min-height: 100vh;
+    font-family: var(--font_default);
+    background-color: var(--bg);
+    transition: background-color 0300ms;
+}
+#btn {
+    text-align: right;
+    margin: 20px 10px 0px;
+}
+#btn > button {
+    border: 1px solid #ebdbb2;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: transparent;
+    transition: border-color 0300ms;
+}
+#btn > button:focus {
+    outline: none;
+}
+#colorSwitch {
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0225ms;
+}
+#colorSwitch:active {
+    transform: scale(0.7);
+}
+
+header {
+    padding: 0px 30px 30px;
+    text-align: center;
+}
+#heading-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-family: var(--font_heading);
+    font-size: 35px;
+    margin-top: 10px;
+    color: var(--color_heading);
+    transition: color 0300ms;
+}
+header > p {
+    color: var(--color_subtitle);
+    transition: color 0300ms;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 64px;
+    align-items: center;
+    padding: 0px 150px 0px;
+}
+.categories {
+    height: 100%;
+    border: 2px solid var(--color_border);
+    border-radius: 7px;
+    background-color: transparent;
+    transition: background-color 0400ms, border 0300ms;
+}
+.categories:hover {
+    background-color: var(--color_categories-hover);
+}
+.contents {
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+}
+.contents > h2 {
+    font-family: var(--font_heading);
+    color: var(--color_heading_categories);
+    transition: color 0300ms;
+}
+.separator {
+    border: 1px solid var(--color_border);
+    margin-bottom: 20px;
+    transition: border 0300ms;
+}
+.links {
+    font-size: 16px;
+}
+.link {
+    color: var(--color_links);
+    text-decoration: none;
+    transition: color 0320ms;
+}
+.link:hover {
+    color: var(--color_links-hover);
+}
+#image {
+    overflow: hidden;
+}
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0420ms ease-out;
+}
+#image:hover img {
+    transform: scale(1.100);
+}
+
+@media only screen and (max-width: 950px) {
+    #container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 40px 40px;
+    }
+    header {
+        padding: 0px 75px 30px;
+    }
+}
