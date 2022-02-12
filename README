@@ -1,12 +1,2 @@
-A minimal homepage for minimal browsers
-=======================================
-
-This is a simple html page - with some styling -
+A simple html page - with some styling -
 that I created to use inside one of my favorite web browsers - qute(https://qutebrowser.org).
-
-However, it is also possible to use it as the default page(or the "new tab page")
-inside of most modern browsers like brave, firefox, edge etc.
-by using third-party browser addons - if it doesn't let you set your own custom url).
-
-One example of such extension is "new tab redirect"
-which is available for almost all the popular chromium based browsers.
