@@ -1,15 +1,21 @@
-:root {
-    --bg: #fdf6e3;
-    --color_heading: #002b36;
-    --color_subtitle: #586e75;
-    --color_heading_categories: #2aa198;
-    --color_categories-hover: #eee8d5;
-    --color_border: #eee8d5;
-    --color_links: #073642;
-    --color_links-hover: #cb4b16;
-    --font_heading: 'Lato', sans-serif;
-    --font_default: 'Fira Sans Condensed', sans-serif;
+@font-face {
+    font-family: iAwriter_Quattro;
+    src: url("./assets/fonts/iAWriterQuattroS-Regular.woff2");
+    font-weight: regular;
 }
+:root {
+    --bg: #f4f0ed;
+    --color_heading: #867462;
+    --color_subtitle: #a38d78;
+    --color_heading_categories: #83b887;
+    --color_categories-hover: #f0ebe7;
+    --color_border: #ded2c8;
+    --color_links: #6b5c4d;
+    --color_links-hover: #c29830;
+    --font_heading: iAwriter_Quattro;
+    --font_default: iAwriter_Quattro;
+}
+
 body {
     min-height: 100vh;
     font-family: var(--font_default);
@@ -21,10 +27,12 @@ body {
     margin: 20px 10px 0px;
 }
 #btn > button {
-    border: 1px solid #ebdbb2;
+    font-family: var(--font_default);
+    border: 1px solid var(--color_border);
     border-radius: 50%;
     padding: 8px;
     background-color: transparent;
+    color: var(--color_button-text);
     transition: border-color 0300ms;
 }
 #btn > button:focus {
@@ -68,12 +76,13 @@ header > p {
 }
 .categories {
     height: 100%;
-    border: 2px solid var(--color_border);
+    border: 2px solid transparent;
     border-radius: 7px;
     background-color: transparent;
     transition: background-color 0400ms, border 0300ms;
 }
 .categories:hover {
+    border: 2px solid var(--color_border);
     background-color: var(--color_categories-hover);
 }
 .contents {
@@ -87,6 +96,8 @@ header > p {
 }
 .separator {
     border: 1px solid var(--color_border);
+    width: 64%;
+    margin-left: 0;
     margin-bottom: 20px;
     transition: border 0300ms;
 }

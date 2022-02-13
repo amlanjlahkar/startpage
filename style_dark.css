@@ -1,14 +1,19 @@
+@font-face {
+    font-family: iAwriter_Quattro;
+    src: url("./assets/fonts/iAWriterQuattroS-Regular.woff2");
+    font-weight: regular;
+}
 :root {
-    --bg: #232729;
-    --color_heading: #f6f5f4;
-    --color_subtitle: #c0bfbc;
-    --color_heading_categories: #26a269;
-    --color_categories-hover: #33393b;
-    --color_border: #33393b;
-    --color_links: #c0bfbc;
-    --color_links-hover: #ffa348;
-    --font_heading: 'Lato', sans-serif;
-    --font_default: 'Fira Sans Condensed', sans-serif;
+    --bg: #2a2520;
+    --color_heading: #ece1d7;
+    --color_subtitle: #a38d78;
+    --color_heading_categories: #78997a;
+    --color_categories-hover: #302b24;
+    --color_border: #4d453e;
+    --color_links: #c1a78e;
+    --color_links-hover: #ebc06d;
+    --font_heading: iAwriter_Quattro;
+    --font_default: iAwriter_Quattro;
 }
 body {
     min-height: 100vh;
@@ -70,12 +75,13 @@ header > p {
 }
 .categories {
     height: 100%;
-    border: 2px solid var(--color_border);
+    border: 2px solid transparent;
     border-radius: 7px;
     background-color: transparent;
     transition: background-color 0400ms, border 0300ms;
 }
 .categories:hover {
+    border: 2px solid var(--color_border);
     background-color: var(--color_categories-hover);
 }
 .contents {
@@ -89,6 +95,8 @@ header > p {
 }
 .separator {
     border: 1px solid var(--color_border);
+    width: 64%;
+    margin-left: 0;
     margin-bottom: 20px;
     transition: border 0300ms;
 }

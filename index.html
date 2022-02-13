@@ -6,8 +6,8 @@
         <meta name="description" content="simple static HTML page primarily intended for using as a homepage inside of minimal web browsers like surf, qute etc.">
         <title>Home</title>
         <link id="color" rel="stylesheet" href="style_dark.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lato:wght@700&display=swap"/>
+        <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com"/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lato:wght@700&display=swap"/>
 
         <script>
             function toggleColor() {
@@ -29,7 +29,7 @@
             <button><div onclick="toggleColor()" id="colorSwitch">🌙</div></button>
         </div>
         <header>
-            <p id="heading-icon">👋🏼</p>
+            <p id="heading-icon"></p>
             <h1>Hello Amlan!</h1>
             <p>Browse through your favorites or watch a video of your interests.</p>
         </header>
@@ -39,11 +39,11 @@
                     <h2>Favorites</h2>
                     <hr class="separator"/>
                     <div class="links">
-                        <div class="link_bg"><a class="link" href="https://github.com/amlanjlahkar?tab=repositories">github</a></div><br/>
+                        <div class="link_bg"><a class="link" href="https://github.com">github</a></div><br/>
                         <div class="link_bg"><a class="link" href="https://www.figma.com/files/drafts?fuid=784804089263037393">drafts_figma</a></div><br/>
                         <div class="link_bg"><a class="link" href="https://mail.google.com/mail/u/0/#inbox">mails</a></div><br/>
-                        <div class="link_bg"><a class="link" href="https://app.raindrop.io/my/20468673">raindrop</a></div><br/>
-                        <div class="link_bg"><a class="link" href="https://drive.google.com/drive/my-drive">my-drive</a></div><br/>
+                        <div class="link_bg"><a class="link" href="https://drive.google.com/drive/my-drive">gdrive</a></div><br/>
+                        <div class="link_bg"><a class="link" href="https://simplenote.com/">simplenote</a></div><br/>
                     </div>
                 </div>
             </div>
@@ -54,11 +54,12 @@
                     <div class="links">
                         <div class="link_bg"><a class="link" href="https://videos.lukesmith.xyz">luke's videos</a></div><br/>
                         <div class="link_bg"><a class="link" href="https://www.youtube.com/c/ThePrimeagen/videos">ThePrimeagen</a></div><br/>
+                        <div class="link_bg"><a class="link" href="https://www.youtube.com/c/lexfridman">Lex Fridman</a></div><br/>
                     </div>
                 </div>
             </div>
             <div class="categories" id="image">
-                <img src="images/rain.gif"/>
+                <img src="./assets/imgs/scene01.jpeg" alt="flowers"/>
             </div>
         </div>
     </body>
